@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=IBM+Plex+Mono&display=swap');
+/* variaveis de cor */
+:root {
+    --color-background: #fdf6e3;
+    --color-card-background: #fff8dc;
+    --color-text-primary: #4a3f35;
+    --color-highlight: #ff914d;
+    --color-highlight-dark: #d2691e;
+    --color-shadow: #b5651d;
+    --color-text-on-highlight: #fffbe0;
+    --card-border: 3px dashed var(--color-highlight-dark);
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    font-family:'IBM Plex Mono', monospace;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body .container {
+    flex: 1;
+    padding-bottom: 40px;
+}
+
+/* menu do bootstrep */
+.navbar {
+    background-color: var(--color-highlight) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.navbar-brand {
+    
+    font-size: 1.2rem;
+    color: var(--color-text-on-highlight) !important;
+    text-shadow: 2px 2px #000;
+}
+
+.nav-link {
+    color: var(--color-text-on-highlight) !important;
+    font-weight: bold;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    background-color: var(--color-card-background);
+    border: var(--card-border);
+}
+
+.dropdown-item {
+    
+    font-size: 0.85rem;
+    color: var(--color-text-primary);
+}
+
+.dropdown-item:hover {
+    background-color: var(--color-highlight-dark);
+    color: var(--color-text-on-highlight);
+}
+
+/* Search */
+.form-control {
+    font-size: 0.85rem;
+    
+}
+
+.btn-outline-success {
+    color: var(--color-text-on-highlight);
+    border-color: var(--color-shadow);
+    background-color: var(--color-highlight-dark);
+    font-weight: bold;
+    
+}
+
+.btn-outline-success:hover {
+    background-color: var(--color-shadow);
+    color: var(--color-text-on-highlight);
+    border-color: var(--color-shadow);
+}
+
+.titulo-formulario {
+    margin-top: 40px;
+    
+    color: var(--color-highlight-dark);
+}
+
+.form-control, label {
+    
+    background-color: var(--color-card-background);
+    border: 1px solid var(--color-highlight-dark);
+    color: var(--color-text-primary);
+}
+
+.btn-primary {
+    background-color: var(--color-highlight);
+    border-color: var(--color-highlight-dark);
+    color: var(--color-text-on-highlight);
+}
+
+.btn-secondary {
+    background-color: var(--color-shadow);
+    border-color: var(--color-highlight-dark);
+    color: var(--color-text-on-highlight);
+}
+/* rodape */
+footer {
+    background-color: var(--color-highlight);
+    text-align: center;
+    padding: 20px;
+    color: var(--color-text-on-highlight);
+    font-size: 0.85rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1000;
+}

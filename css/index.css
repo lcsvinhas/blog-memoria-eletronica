@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=IBM+Plex+Mono&display=swap');
+
+/* variaveis de cor */
+:root {
+    --color-background: #fdf6e3;
+    --color-card-background: #fff8dc;
+    --color-text-primary: #4a3f35;
+    --color-highlight: #ff914d;
+    --color-highlight-dark: #d2691e;
+    --color-shadow: #b5651d;
+    --color-text-on-highlight: #fffbe0;
+    --card-border: 3px dashed var(--color-highlight-dark);
+}
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+/* menu Bootstrap */
+.navbar {
+    background-color: var(--color-highlight) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.navbar-brand {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2rem;
+    color: var(--color-text-on-highlight) !important;
+    text-shadow: 2px 2px #000;
+}
+
+.nav-link {
+    color: var(--color-text-on-highlight) !important;
+    font-weight: bold;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    background-color: var(--color-card-background);
+    border: var(--card-border);
+}
+
+.dropdown-item {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--color-text-primary);
+}
+
+.dropdown-item:hover {
+    background-color: var(--color-highlight-dark);
+    color: var(--color-text-on-highlight);
+}
+
+/* Search */
+.form-control {
+    font-size: 0.85rem;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.btn-outline-success {
+    color: var(--color-text-on-highlight);
+    border-color: var(--color-shadow);
+    background-color: var(--color-highlight-dark);
+    font-weight: bold;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.btn-outline-success:hover {
+    background-color: var(--color-shadow);
+    color: var(--color-text-on-highlight);
+    border-color: var(--color-shadow);
+}
+
+/* inicio */
+.intro-home {
+    max-width: 1450px;
+    min-height: 400px;
+    margin: 40px auto;
+    text-align: justify;
+    padding: 20px;
+    background-color: var(--color-card-background);
+    border: 3px dashed var(--color-highlight-dark);
+    border-radius: 12px;
+    box-shadow: 4px 4px 0 var(--color-shadow);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.intro-home h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: var(--color-highlight-dark);
+    text-shadow: 1px 1px #000;
+    text-align: center;
+}
+
+.intro-home .cta-button {
+    display: block;
+    margin: 20px auto;
+    max-width: 250px;
+    background-color: var(--color-highlight);
+    color: var(--color-text-on-highlight);
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 2px 2px 0 var(--color-shadow);
+}
+
+.intro-home .cta-button:hover {
+    background-color: var(--color-highlight-dark);
+}
+/* titulo */
+.section-title {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: var(--color-highlight-dark);
+    font-size: 1.2rem;
+    margin-top: 60px;
+    text-shadow: 1px 1px #000;
+} 
+
+/* eletronicos */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.gallery h3 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.item {
+    background: var(--color-card-background);
+    border: var(--card-border);
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 4px 4px 0px var(--color-shadow);
+    transition: transform 0.2s;
+}
+
+.item:hover {
+    transform: translateY(-5px) !important;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.item p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* depoimentos */
+.testimonials {
+    background-color: var(--color-card-background);
+    padding: 40px 20px;
+    text-align: center;
+    border-top: var(--card-border);
+}
+
+.testimonials h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2rem;
+    color: var(--color-highlight-dark);
+    margin-bottom: 30px;
+}
+
+.testimonial-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    background: var(--color-background);
+    border: var(--card-border);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 4px 4px 0px var(--color-shadow);
+}
+
+.testimonial p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--color-text-primary);
+    margin-bottom: 10px;
+}
+
+.testimonial span {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: var(--color-highlight-dark);
+}
+
+/* rodape */
+footer {
+    background-color: var(--color-highlight);
+    text-align: center;
+    padding: 20px;
+    color: var(--color-text-on-highlight);
+    font-size: 0.85rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1000;
+}
